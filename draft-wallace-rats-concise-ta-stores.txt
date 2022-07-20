@@ -5,8 +5,8 @@
 Remote ATtestation ProcedureS                                 C. Wallace
 Internet-Draft                                                 Red Hound
 Intended status: Standards Track                              R. Housley
-Expires: 31 December 2022                                 Vigil Security
-                                                            29 June 2022
+Expires: 21 January 2023                                  Vigil Security
+                                                            20 July 2022
 
 
                         Concise TA Stores (CoTS)
@@ -49,7 +49,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 31 December 2022.
+   This Internet-Draft will expire on 21 January 2023.
 
 Copyright Notice
 
@@ -491,7 +491,7 @@ Table of Contents
    The $$tas-list-purpose type provides an extensible means of
    expressions actions for which the corresponding keys are applicable.
    For example, trust anchors in a concise-ta-store-map with purpose
-   field set to eat may not be used to verification certification paths.
+   field set to eat may not be used to verify certification paths.
    Extended key usage values corresponding to each purpose listed below
    (except for certificate) are defined in a companion specification.
 
@@ -676,10 +676,11 @@ Table of Contents
    grouped as a TA store with the name "Miscellaneous TA Store".  The
    first TA is an X.509 certificate.  The second and third TAs are
    TrustAnchorInfo objects containing X.509 certificates.  Though not
-   shown in this example, constraints could added to the TrustAnchorInfo
-   elements, i.e., to restrict verification to attestations asserting a
-   specific vendor name.  It features a tag identity field containing a
-   string as the tag identity with no version field present.
+   shown in this example, constraints could be added to the
+   TrustAnchorInfo elements, i.e., to restrict verification to
+   attestations asserting a specific vendor name.  It features a tag
+   identity field containing a string as the tag identity with no
+   version field present.
 
    {
      "tag-identity": {
@@ -1007,16 +1008,16 @@ Table of Contents
    [I-D.draft-birkholz-rats-corim]
               Birkholz, H., Fossati, T., Deshpande, Y., Smith, N., and
               W. Pan, "Concise Reference Integrity Manifest", Work in
-              Progress, Internet-Draft, draft-birkholz-rats-corim-02, 26
-              January 2022, <https://datatracker.ietf.org/doc/html/
-              draft-birkholz-rats-corim-02>.
+              Progress, Internet-Draft, draft-birkholz-rats-corim-03, 11
+              July 2022, <https://datatracker.ietf.org/doc/html/draft-
+              birkholz-rats-corim-03>.
 
    [I-D.draft-ietf-rats-eat]
               Lundblade, L., Mandyam, G., and J. O'Donoghue, "The Entity
               Attestation Token (EAT)", Work in Progress, Internet-
-              Draft, draft-ietf-rats-eat-13, 20 May 2022,
+              Draft, draft-ietf-rats-eat-14, 10 July 2022,
               <https://datatracker.ietf.org/doc/html/draft-ietf-rats-
-              eat-13>.
+              eat-14>.
 
    [I-D.draft-ietf-sacm-coswid]
               Birkholz, H., Fitzgerald-McKay, J., Schmidt, C., and D.
